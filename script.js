@@ -4,10 +4,16 @@ let img = document.getElementById('bird-1');
 let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 
+
 // getting bird element properties
 let bird_props = bird.getBoundingClientRect();
 
 // This method returns DOMReact -> top, right, bottom, left, x, y, width and height
+const imageUrl='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/background-img.png'
+const img =
+    document.createElement('img');
+img.src =imageUrl;
+document.body.appendChild(img);
 let background = document.querySelector('.background').getBoundingClientRect();
 
 let score_val = document.querySelector('.score_val');
