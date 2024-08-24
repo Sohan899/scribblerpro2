@@ -1,6 +1,22 @@
 let move_speed = 3, grativy = 0.5;
+const imageUrl1='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/bird.png'
+const img =
+    document.createElement('img');
+img.src =imageUrl1;
+document.body.appendChild(img);
+const imageUrl2='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/bird-2.png'
+const img =
+    document.createElement('img');
+img.src =imageUrl2;
+document.body.appendChild(img);
 let bird = document.querySelector('.bird');
 let img = document.getElementById('bird-1');
+const audioUrl ='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/point.mp3';
+const audio = newAudio(audioUrl);
+audio.play();
+const audioUrl1 ='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/die.mp3';
+const audio = newAudio(audioUrl1);
+audio.play();
 let sound_point = new Audio('sounds effect/point.mp3');
 let sound_die = new Audio('sounds effect/die.mp3');
 
@@ -9,7 +25,7 @@ let sound_die = new Audio('sounds effect/die.mp3');
 let bird_props = bird.getBoundingClientRect();
 
 // This method returns DOMReact -> top, right, bottom, left, x, y, width and height
-const imageUrl='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/background-img.png'
+const imageUrl='https://cdn.jsdelivr.net/gh/Sohan899/scribblerpro2/background-img.png';
 const img =
     document.createElement('img');
 img.src =imageUrl;
